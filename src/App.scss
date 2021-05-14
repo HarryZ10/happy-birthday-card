@@ -39,6 +39,16 @@
     user-select: none;
     transition: all 0.5s;
   }
+
+  .confetti-wrap {
+    padding: 20px;
+  }
+  
+  .confetti-wrap h3 {
+    margin: 0;
+    color: #fff;
+    letter-spacing: 1.5px;
+  }
   
   .App {
     // background: #FFF1E3;

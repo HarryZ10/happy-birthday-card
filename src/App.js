@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, useState, useRef, useEffect } from 'react';
 import Grid from '@material-ui/core/Grid';
+import Confetti from "react-confetti";
+import useWindowDimensions from './useWindowDimensions.js';
 
 import './App.scss';
 import AppFooter from './Footer';
@@ -12,16 +14,40 @@ import letter4 from '../src/images/5.jpg';
 import letter5 from '../src/images/6.jpg';
 import letter6 from '../src/images/7.jpg';
 
-class App extends Component {
-  render() {
+function App() {
+
+  // Hooks
+  const { s_height, s_width } = useWindowDimensions();
+  const [height, setHeight] = useState(null);
+  const [width, setWidth] = useState(null);
+  const [show, setShow] = useState(false);
+  const confettiRef = useRef(null);
+
+  useEffect(() => {
+    setHeight(1500);
+    setWidth(s_width);
+  }, [])
+
+  const handleShow = toggle => {
+    setShow(toggle);
+  }
     return(
       <div className='App'>
+        
 
         <div style={{paddingTop: '2200px', paddingBottom: '100px'}}>
         <Grid size={2}>
           <Grid size={3} spacing={2}>
-            <Grid size={4} spacing={3}>
-            <div style={{paddingTop: '50px'}}></div>
+
+          <div
+        onMouseEnter={() => handleShow(true)}
+        onMouseLeave={() => handleShow(false)}
+
+        className="confetti-wrap"
+        ref={confettiRef}>
+        
+        <Grid size={4} spacing={3}>
+                <div style={{paddingTop: '50px'}}></div>
 
                 <img alt="title card" src={titleCard} class="stickyNote" className="container hoverable"/>
                 <div style={{paddingBottom: '50px'}}></div>
@@ -45,6 +71,18 @@ class App extends Component {
                 <div style={{paddingBottom: '50px'}}></div>
 
             </Grid>
+
+        <Confetti
+          recycle={show}
+          numberOfPieces={400}
+          width={width}
+          height={height}
+        />
+      </div>
+
+            
+
+
             </Grid>  
             </Grid>
 
@@ -59,7 +97,6 @@ class App extends Component {
             </AppFooter>
       </div>
     )
-  }
 }
 
 
