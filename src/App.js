@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
 import Grid from '@material-ui/core/Grid';
 
 import './App.scss';
