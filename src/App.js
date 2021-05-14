@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Confetti from "react-confetti";
+import ReactAudioPlayer from 'react-audio-player';
 
 import './App.scss';
 import AppFooter from './Footer';
@@ -13,8 +14,11 @@ import letter4 from '../src/images/5.jpg';
 import letter5 from '../src/images/6.jpg';
 import letter6 from '../src/images/7.jpg';
 
-function App() {
+import music from './lobby.mp3';
 
+
+const App = ({ url }) => {
+  
   // Hooks
   const [height, setHeight] = useState(null);
   const [width, setWidth] = useState(null);
@@ -32,6 +36,12 @@ function App() {
     return(
       <div className='App'>
         
+        <ReactAudioPlayer
+          src={music}
+          autoPlay={true}
+          volume={0.35}
+          loop={true}
+        />
 
         <div style={{paddingTop: '2200px', paddingBottom: '100px'}}>
         <Grid size={2}>
