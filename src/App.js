@@ -18,33 +18,33 @@ class App extends Component {
     return(
       <div className='App'>
 
-        {/* TITLE */}
-        <Grid spacing={3} xs={12} justify="flex-end" style={{position: 'absolute'}}>
-          <Grid item xs={12} sm={6}>
-            <Grid item xs={12} style={pageIntro}>
-              <h2 style={pageTitle}>
-                <Typer dataText={["Happy Birthday, Nico!!"]}/>
-              </h2>
-              <h3 style={mainSubTitleStyle}>
-                <Typer dataText={["You're the homie!!"]}/>
-              </h3>
-            </Grid>
-          </Grid>
-        </Grid>
-
-        <div style={{paddingTop: '2000px', paddingBottom: '100px'}}>
+        <div style={{paddingTop: '2200px', paddingBottom: '100px'}}>
         <Grid size={2}>
           <Grid size={3} spacing={2}>
             <Grid size={4} spacing={3}>
-              <Grid>
+            <div style={{paddingTop: '50px'}}></div>
+
                 <img alt="title card" src={titleCard} class="stickyNote" className="container hoverable"/>
-              </Grid>
+                <div style={{paddingBottom: '50px'}}></div>
+                
                 <img alt="Letter" src={letter1} class="stickyNote" className="container hoverable"/>
+                <div style={{paddingBottom: '50px'}}></div>
+
                 <img alt="Letter" src={letter2} class="stickyNote" className="container hoverable" />
+                <div style={{paddingBottom: '50px'}}></div>
+
                 <img alt="Letter" src={letter3} class="stickyNote" className="container hoverable"/>
+                <div style={{paddingBottom: '50px'}}></div>
+
                 <img alt="Letter" src={letter4} class="stickyNote" className="container hoverable"/>
+                <div style={{paddingBottom: '50px'}}></div>
+
                 <img alt="Letter" src={letter5} class="stickyNote" className="container hoverable"/>
+                <div style={{paddingBottom: '50px'}}></div>
+
                 <img alt="Letter" src={letter6} class="stickyNote" className="container hoverable"/>
+                <div style={{paddingBottom: '50px'}}></div>
+
             </Grid>
             </Grid>  
             </Grid>
@@ -91,7 +91,7 @@ const pageTitle={
   lineHeight: 'normal',
   margin: 'auto',
   paddingTop: '500px',
-  marginTop: '100px',
+  marginTop: '10px',
   display: 'flex',
   justifyContent: 'left',
   alignItems: 'left',
