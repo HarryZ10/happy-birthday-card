@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Grid from '@material-ui/core/Grid';
 
 import './App.scss';
-import Typer from './Typer';
 import AppFooter from './Footer';
 
 import titleCard from '../src/images/1.jpg';
@@ -63,40 +62,7 @@ class App extends Component {
   }
 }
 
-const pageIntro={
-  textAlign: 'left',
-  paddingTop: '50px',
-}
-
-const mainSubTitleStyle = {
-  fontFamily: 'Comfortaa',
-  fontStyle: 'normal',
-  fontSize: '18px',
-  lineHeight: 'normal',
-  padding: '10px',
-  display: 'flex',
-  margin: 'auto',
-  alignItems: 'left',
-  textAlign: 'left',
-  color: '#353535',
-  justifyContent: 'left',
-  paddingBottom: '50px'
-}
 
 
-const pageTitle={
-  fontFamily: 'Abril Fatface', cursive: true,
-  fontStyle: 'normal',
-  fontSize: '36px',
-  lineHeight: 'normal',
-  margin: 'auto',
-  paddingTop: '500px',
-  marginTop: '10px',
-  display: 'flex',
-  justifyContent: 'left',
-  alignItems: 'left',
-  textAlign: 'left',
-  color: '#353535'
-}
 
 export default App;
