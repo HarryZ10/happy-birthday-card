@@ -1,7 +1,6 @@
-import React, { Component, useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import Grid from '@material-ui/core/Grid';
 import Confetti from "react-confetti";
-import useWindowDimensions from './useWindowDimensions.js';
 
 import './App.scss';
 import AppFooter from './Footer';
@@ -17,7 +16,6 @@ import letter6 from '../src/images/7.jpg';
 function App() {
 
   // Hooks
-  const { s_height, s_width } = useWindowDimensions();
   const [height, setHeight] = useState(null);
   const [width, setWidth] = useState(null);
   const [show, setShow] = useState(false);
@@ -25,7 +23,7 @@ function App() {
 
   useEffect(() => {
     setHeight(1500);
-    setWidth(s_width);
+    setWidth(2000);
   }, [])
 
   const handleShow = toggle => {
