@@ -5,13 +5,13 @@ import './App.scss';
 import Typer from './Typer';
 import AppFooter from './Footer';
 
-import titleCard from '../src/images/1.svg';
-import letter1 from '../src/images/2.svg';
-import letter2 from '../src/images/3.svg';
-import letter3 from '../src/images/4.svg';
-import letter4 from '../src/images/5.svg';
-import letter5 from '../src/images/6.svg';
-import letter6 from '../src/images/7.svg';
+import titleCard from '../src/images/1.jpg';
+import letter1 from '../src/images/2.jpg';
+import letter2 from '../src/images/3.jpg';
+import letter3 from '../src/images/4.jpg';
+import letter4 from '../src/images/5.jpg';
+import letter5 from '../src/images/6.jpg';
+import letter6 from '../src/images/7.jpg';
 
 class App extends Component {
   render() {
