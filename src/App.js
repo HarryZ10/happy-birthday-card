@@ -37,14 +37,14 @@ class App extends Component {
           <Grid size={3} spacing={2}>
             <Grid size={4} spacing={3}>
               <Grid>
-                <img src={titleCard} class="stickyNote" className="container hoverable"/>
+                <img alt="title card" src={titleCard} class="stickyNote" className="container hoverable"/>
               </Grid>
-                <img src={letter1} class="stickyNote" className="container hoverable"/>
-                <img src={letter2} class="stickyNote" className="container hoverable" />
-                <img src={letter3} class="stickyNote" className="container hoverable"/>
-                <img src={letter4} class="stickyNote" className="container hoverable"/>
-                <img src={letter5} class="stickyNote" className="container hoverable"/>
-                <img src={letter6} class="stickyNote" className="container hoverable"/>
+                <img alt="Letter" src={letter1} class="stickyNote" className="container hoverable"/>
+                <img alt="Letter" src={letter2} class="stickyNote" className="container hoverable" />
+                <img alt="Letter" src={letter3} class="stickyNote" className="container hoverable"/>
+                <img alt="Letter" src={letter4} class="stickyNote" className="container hoverable"/>
+                <img alt="Letter" src={letter5} class="stickyNote" className="container hoverable"/>
+                <img alt="Letter" src={letter6} class="stickyNote" className="container hoverable"/>
             </Grid>
             </Grid>  
             </Grid>
@@ -67,23 +67,6 @@ const pageIntro={
   textAlign: 'left',
   paddingTop: '50px',
 }
-
-
-const subTitleStyle = {
-  fontFamily: 'Comfortaa',
-  fontStyle: 'normal',
-  fontWeight: 'bold',
-  fontSize: '14px',
-  lineHeight: 'normal',
-  padding: '0px',
-  display: 'flex',
-  alignItems: 'left',
-  textAlign: 'left',
-  transition: 'all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1)',
-  color: 'white',
-  justifyContent: 'left',
-}
-
 
 const mainSubTitleStyle = {
   fontFamily: 'Comfortaa',
