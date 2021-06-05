@@ -37,7 +37,7 @@ const App = ({ url }) => {
         <ReactAudioPlayer
           src={music}
           autoPlay={true}
-          volume={0.35}
+          volume={0.5}
           loop={true}
         />
 
