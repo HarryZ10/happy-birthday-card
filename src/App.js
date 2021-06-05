@@ -11,8 +11,6 @@ import letter1 from '../src/images/2.jpg';
 import letter2 from '../src/images/3.jpg';
 import letter3 from '../src/images/4.jpg';
 import letter4 from '../src/images/5.jpg';
-import letter5 from '../src/images/6.jpg';
-import letter6 from '../src/images/7.jpg';
 
 import music from './lobby.mp3';
 
@@ -43,18 +41,18 @@ const App = ({ url }) => {
           loop={true}
         />
 
-        <div style={{paddingTop: '2200px', paddingBottom: '100px'}}>
+        <div style={{paddingTop: '1500px', paddingBottom: '100px'}}>
         <Grid size={2}>
           <Grid size={3} spacing={2}>
 
           <div
-        onMouseEnter={() => handleShow(true)}
-        onMouseLeave={() => handleShow(false)}
+            onMouseEnter={() => handleShow(true)}
+            onMouseLeave={() => handleShow(false)}
 
-        className="confetti-wrap"
-        ref={confettiRef}>
-        
-        <Grid size={4} spacing={3}>
+            className="confetti-wrap"
+            ref={confettiRef}>
+
+              <Grid size={4} spacing={3}>
                 <div style={{paddingTop: '50px'}}></div>
 
                 <img alt="title card" src={titleCard} class="stickyNote" className="container hoverable"/>
@@ -72,13 +70,7 @@ const App = ({ url }) => {
                 <img alt="Letter" src={letter4} class="stickyNote" className="container hoverable"/>
                 <div style={{paddingBottom: '50px'}}></div>
 
-                <img alt="Letter" src={letter5} class="stickyNote" className="container hoverable"/>
-                <div style={{paddingBottom: '50px'}}></div>
-
-                <img alt="Letter" src={letter6} class="stickyNote" className="container hoverable"/>
-                <div style={{paddingBottom: '50px'}}></div>
-
-            </Grid>
+              </Grid>
 
         <Confetti
           recycle={show}
@@ -87,20 +79,14 @@ const App = ({ url }) => {
           height={height}
         />
       </div>
-
-            
-
-
             </Grid>  
             </Grid>
 
         </div>
-       
-              
-           
+        
         <AppFooter>
               <p>
-              © 2021 • Developed by Harry Zhu | Made with ReactJS
+              © 2021 • Happy Birthday, Jennifer!
               </p>
             </AppFooter>
       </div>

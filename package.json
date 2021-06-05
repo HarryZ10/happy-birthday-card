@@ -1,5 +1,5 @@
 {
-  "name": "nicos-bday",
+  "name": "happy-birthday-card",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -41,5 +41,16 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "description": "Feel free to fork your own and make your friends happy on their special day!",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HarryZ10/happy-birthday-card.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HarryZ10/happy-birthday-card/issues"
   }
 }
