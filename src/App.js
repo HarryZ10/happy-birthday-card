@@ -191,7 +191,7 @@ const App = () => {
                     /> 
                     <CardContent>
                         <Typography id="card" gutterBottom variant="h5" component="div">
-                            "How would you describe Alex?"
+                            Here is what your friends said about you!
                         </Typography>
                     </CardContent>
                 </CardActionArea>
