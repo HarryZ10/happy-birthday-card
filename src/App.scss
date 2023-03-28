@@ -49,7 +49,11 @@
     }
 
     #title-card {
-        width: 100% !important;
+        width: 90% !important;
+    }
+
+    #welcome-div {
+        width: 90% !important;
     }
 }
 
@@ -61,6 +65,10 @@
 .react-photo-gallery--gallery {
     width: 99%;
     margin: 0 auto;
+}
+
+#title-card {
+    width: 100% !important;
 }
 
 #welcome {
