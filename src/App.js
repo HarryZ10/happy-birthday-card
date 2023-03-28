@@ -11,15 +11,15 @@ import {
 } from '@mui/material';
 
 // Third Party Libraries
-import ReactAudioPlayer from 'react-audio-player';
 import ReactWordcloud from 'react-wordcloud';
 import Gallery from 'react-photo-gallery';
-
-// Custom Components
-import './App.scss';
+import ReactJkMusicPlayer from 'react-jinke-music-player'
+import 'react-jinke-music-player/assets/index.css'
 
 // Static Assets
-import titleCard from '../src/images/1.jpg';
+import './App.scss';
+import { Form } from './content.json';
+import photo0 from '../src/images/1.jpg';
 import photo1 from '../src/images/2.jpg';
 import photo2 from '../src/images/3.jpg';
 import photo3 from '../src/images/4.jpg';
@@ -29,8 +29,8 @@ import photo6 from '../src/images/7.jpg';
 import photo7 from '../src/images/8.png';
 import photo8 from '../src/images/9.jpg';
 import photo9 from '../src/images/10.jpg';
-import music from './lobby.mp3';
-import { Form } from './content.json';
+import favicon from '../src/images/favicon.png';
+import music from './yuqi.mp3';
 
 /**
  * This app is the main component of the application.
@@ -124,16 +124,33 @@ const App = () => {
         }
     ];
 
+    const playerOptions = {
+        audioLists: [
+            {
+                name: 'Bonnie and Clyde',
+                singer: 'YUQI',
+                cover: favicon,
+                musicSrc: music
+            }
+        ],
+        preload: true,
+        autoPlay: true,
+        autoPlayInitLoadPlayList: true,
+        defaultPlayIndex: 0,
+        showDownload: true,
+        showPlay: true,
+        showReload: true,
+        responsive: true,
+        volumeFade: {
+            fadeOut: 500,
+        },
+        drag: true,
+        toggle: true,
+    };
+
     return (
         // the main app component
         <div className='App'>
-
-            <ReactAudioPlayer
-                src={music}
-                autoPlay={true}
-                volume={0.5}
-                loop={true}
-            />
 
             <h1 id="welcome" style={welcomeText}>
                 Happy <span style={TwentyOne}>21st</span> Birthday, <span style={Alex}>Alex</span>!
@@ -144,7 +161,7 @@ const App = () => {
                     <CardMedia>
                         <img
                             id = "title-card"
-                            src={titleCard}
+                            src={photo0}
                             alt="title card"
                             width="400px"
                             style={
@@ -205,7 +222,8 @@ const App = () => {
                 Photo Gallery
             </Typography>
 
-            <Gallery photos={photos} />;
+            <Gallery photos={photos} />
+            <ReactJkMusicPlayer {...playerOptions} />
 
         </div>
     )
