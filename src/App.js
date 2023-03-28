@@ -71,7 +71,7 @@ const App = () => {
         rotationAngles: [-90, 0],
         fontFamily: "Quicksand",
         fontSizes: [20, 60],
-        deterministic: true,
+        deterministic: false,
     };
 
     // window size of the word cloud
@@ -140,7 +140,7 @@ const App = () => {
                 Happy <span style={TwentyOne}>21st</span> Birthday, <span style={Alex}>Alex</span>!
             </h1>
 
-            <Card id="card-div" style={card}>
+            <Card id="welcome-div" style={card}>
                 <CardContent>
                     <CardMedia>
                         <img
@@ -167,6 +167,7 @@ const App = () => {
             <Card id="card-div" style={card}>
                 <CardActionArea>
                     <ReactWordcloud
+                        id="word-cloud"
                         callbacks={callbacks}
                         options={options}
                         size={size}

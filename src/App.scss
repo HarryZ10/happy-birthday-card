@@ -96,10 +96,24 @@
     text-align: center;
 }
 
-#card-div,
+#card-div {
+    margin: 0 auto;
+    width: 90%;
+}
+
+#welcome-div {
+    margin: 0 auto;
+    width: 30%;
+    margin-bottom: 10rem;
+}
+
 #notes-div {
     margin: 0 auto;
     width: 70%;
+}
+
+#word-cloud {
+    margin: 0 !important;
 }
 
 #card-div {

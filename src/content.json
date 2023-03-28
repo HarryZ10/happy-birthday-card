@@ -7,19 +7,19 @@
             },
             {
                 "word": "Kind",
-                "value": 20
+                "value": 40
             },
             {
                 "word": "Fade main",
-                "value": 10
+                "value": 20
             },
             {
                 "word": "Considerate",
-                "value": 10
+                "value": 20
             },
             {
                 "word": "Funny",
-                "value": 20
+                "value": 40
             },
             {
                 "word": "Kevin",
@@ -27,11 +27,23 @@
             },
             {
                 "word": "Caring",
+                "value": 20
+            },
+            {
+                "word": "Alluring",
                 "value": 10
             },
             {
-                "word": "Considerate",
+                "word": "Charming",
                 "value": 10
+            },
+            {
+                "word": "Endearing",
+                "value": 20
+            },
+            {
+                "word": "Attractive",
+                "value": 1
             }
         ],
         "notes": [
@@ -45,7 +57,7 @@
                 "text": "Happy Birthday Alex! I hope on your 21st birthday, that you have a wonderful day and are surrounded by friends and family you care about!"
             },
             {
-                "text": "Test"
+                "text": "Alex, I hope you know you’re still a bad mofo. Happy birthday!"
             },
             {
                 "text": "Test"
