@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
 
 // Material UI
 import {
@@ -11,7 +11,6 @@ import {
 } from '@mui/material';
 
 // Third Party Libraries
-import Confetti from "react-confetti";
 import ReactAudioPlayer from 'react-audio-player';
 import ReactWordcloud from 'react-wordcloud';
 import Gallery from 'react-photo-gallery';
