@@ -9,6 +9,6 @@ Feel free to fork your own and make your friends happy on their special day!
 3. Notes
 4. Photo gallery
 
-# Demo
+# Prod Demo
 
 https://alexkauv.netlify.app
