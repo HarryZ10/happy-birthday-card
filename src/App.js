@@ -272,7 +272,8 @@ const App = () => {
                         />
                     </CardMedia>
                     <Typography id="card" gutterBottom variant="h5" component="div">
-                        —to you from koolkidz
+                        to: Alex<br/>
+                        from: your friends
                     </Typography>
                 </CardContent>
             </Card> 
