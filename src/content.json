@@ -68,6 +68,18 @@
             {
                 "word": "The Man",
                 "value": 60
+            },
+            {
+                "word": "Sweet",
+                "value": 25
+            },
+            {
+                "word": "Awesome",
+                "value": 25
+            },
+            {
+                "word": "Scrumptious",
+                "value": 25
             }
         ],
         "notes": [
@@ -91,6 +103,9 @@
             },
             {
                 "text": "Pour up (drank), head shot (drank)\nSit down (drank), stand up (drank)\nPass out (drank), wake up (drank)\nFaded (drank), faded (drank)"
+            },
+            {
+                "text": "TIME TO PARTAYYYYY!!! Please take a shot for me"
             }
         ]
     }

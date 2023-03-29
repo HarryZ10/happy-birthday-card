@@ -29,6 +29,21 @@ import photo6 from '../src/images/7.jpg';
 import photo7 from '../src/images/8.png';
 import photo8 from '../src/images/9.jpg';
 import photo9 from '../src/images/10.jpg';
+import photo10 from '../src/images/11.jpg';
+import photo11 from '../src/images/12.jpg';
+import photo12 from '../src/images/13.jpg';
+import photo13 from '../src/images/14.jpg';
+import photo14 from '../src/images/15.jpg';
+import photo15 from '../src/images/16.jpg';
+import photo16 from '../src/images/17.jpg';
+import photo17 from '../src/images/18.jpg';
+import photo18 from '../src/images/19.jpg';
+import photo19 from '../src/images/20.jpg';
+import photo20 from '../src/images/21.jpg';
+import photo21 from '../src/images/22.jpg';
+import photo22 from '../src/images/23.jpg';
+import photo23 from '../src/images/24.jpg';
+import photo24 from '../src/images/25.jpg';
 import favicon from '../src/images/favicon.png';
 import music from './yuqi.mp3';
 
@@ -121,7 +136,82 @@ const App = () => {
             src: photo9,
             width: 5,
             height: 3
-        }
+        },
+        {
+            src: photo10,
+            width: 1,
+            height: 1
+        },
+        {
+            src: photo11,
+            width: 5,
+            height: 3
+        },
+        {
+            src: photo12,
+            width: 4,
+            height: 6
+        },
+        {
+            src: photo13,
+            width: 5,
+            height: 3
+        },
+        {
+            src: photo14,
+            width: 15,
+            height: 3
+        },
+        {
+            src: photo15,
+            width: 15,
+            height: 3
+        },
+        {
+            src: photo16,
+            width: 4.5,
+            height: 3
+        },
+        {
+            src: photo17,
+            width: 4.5,
+            height: 3
+        },
+        {
+            src: photo18,
+            width: 4.5,
+            height: 3
+        },
+        {
+            src: photo19,
+            width: 5,
+            height: 3
+        },
+        {
+            src: photo20,
+            width: 3,
+            height: 5
+        },
+        {
+            src: photo21,
+            width: 3,
+            height: 5
+        },
+        {
+            src: photo22,
+            width: 3,
+            height: 5
+        },
+        {
+            src: photo23,
+            width: 5,
+            height: 3
+        },
+        {
+            src: photo24,
+            width: 3,
+            height: 5
+        },
     ];
 
     const playerOptions = {
