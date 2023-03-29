@@ -272,7 +272,7 @@ const App = () => {
                         />
                     </CardMedia>
                     <Typography id="card" gutterBottom variant="h5" component="div">
-                        —from your friends and family
+                        —to you from koolkidz
                     </Typography>
                 </CardContent>
             </Card> 
