@@ -177,6 +177,10 @@ body {
         linear-gradient(to bottom, white 1px, transparent 1px);
 }
 
+img {
+    pointer-events: none;
+}
+
 #welcome {
     color: #353535;
     font-family: 'Abril Fatface';
