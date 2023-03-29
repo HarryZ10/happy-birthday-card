@@ -19,7 +19,7 @@
             },
             {
                 "word": "Funny",
-                "value": 40
+                "value": 55
             },
             {
                 "word": "Kevin",
@@ -92,6 +92,14 @@
             {
                 "word": "Valorant Goat",
                 "value": 25
+            },
+            {
+                "word": "Compassionate",
+                "value": 25
+            },
+            {
+                "word": "Warm-hearted",
+                "value": 25
             }
         ],
         "notes": [
@@ -121,6 +129,9 @@
             },
             {
                 "text": "Happy 21st Alex, hope you enjoy it and to many more"
+            },
+            {
+                "text": "YOLO :))) you only live once !!!! So fuck shit up 🙂"
             }
         ]
     }
