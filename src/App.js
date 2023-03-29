@@ -45,7 +45,8 @@ import photo22 from '../src/images/23.jpg';
 import photo23 from '../src/images/24.jpg';
 import photo24 from '../src/images/25.jpg';
 import favicon from '../src/images/favicon.png';
-import music from './yuqi.mp3';
+import YUQI from './yuqi.mp3';
+import LAMAR from './lamar.mp3';
 
 /**
  * This app is the main component of the application.
@@ -217,10 +218,16 @@ const App = () => {
     const playerOptions = {
         audioLists: [
             {
+                name: 'Swimming Pools (Drank)',
+                singer: 'Kendrick Lamar',
+                cover: favicon,
+                musicSrc: LAMAR
+            },
+            {
                 name: 'Bonnie and Clyde',
                 singer: 'YUQI',
                 cover: favicon,
-                musicSrc: music
+                musicSrc: YUQI
             }
         ],
         preload: true,
@@ -232,7 +239,7 @@ const App = () => {
         showReload: true,
         responsive: true,
         volumeFade: {
-            fadeOut: 500,
+            fadeOut: 900,
         },
         drag: true,
         toggle: true,
