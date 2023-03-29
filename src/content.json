@@ -38,12 +38,36 @@
                 "value": 10
             },
             {
-                "word": "Endearing",
+                "word": "Attractive",
+                "value": 1
+            },
+            {
+                "word": "Fun",
                 "value": 20
             },
             {
-                "word": "Attractive",
-                "value": 1
+                "word": "Wholesome",
+                "value": 25
+            },
+            {
+                "word": "Gamer",
+                "value": 20
+            },
+            {
+                "word": "catboy",
+                "value": 20
+            },
+            {
+                "word": "defeatable by egg",
+                "value": 20
+            },
+            {
+                "word": "pewpew",
+                "value": 20
+            },
+            {
+                "word": "The Man",
+                "value": 60
             }
         ],
         "notes": [
@@ -61,6 +85,12 @@
             },
             {
                 "text": "Happy birthday, Alex! Thanks for being a great person that everyone can count on. I hope you have a  special day with your relatives and friends."
+            },
+            {
+                "text": "Happy birthday 🥳 Wishing u the best!"
+            },
+            {
+                "text": "Pour up (drank), head shot (drank)\nSit down (drank), stand up (drank)\nPass out (drank), wake up (drank)\nFaded (drank), faded (drank)"
             }
         ]
     }

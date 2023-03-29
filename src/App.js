@@ -61,7 +61,7 @@ const App = () => {
     const callbacks = {
         onWordClick: console.log,
         onWordMouseOver: console.log,
-        getWordTooltip: word => ''
+        getWordTooltip: word => '',
     }
 
     // setting additional options for the word cloud
@@ -197,8 +197,8 @@ const App = () => {
                 </CardActionArea>
             </Card> 
 
-            <Typography id="enc" style={header} gutterBottom variant="h5" component="div">
-                Notes
+            <Typography id="enc" style={welcomeText} gutterBottom variant="h5" component="div">
+                Birthday <span id="note-span">Notes</span>
             </Typography>
 
             <Grid id="notes-div" container spacing={{ xs: 2, sm: 4, md: 1 }} columns={{ xs: 1, sm: 8, md: 12 }}>
@@ -210,7 +210,9 @@ const App = () => {
                                     #{index + 1}
                                 </Typography>
                                 <Typography id="card-text" gutterBottom variant="h5" component="div">
-                                    {note.text}
+                                    {note.text.split("\n").map((item, key) => {
+                                        return <span key={key}>{item}<br/></span>
+                                    })}
                                 </Typography>
                             </CardContent>
                         </Card>
@@ -232,6 +234,7 @@ const App = () => {
 const welcomeText = {
     fontFamily: "ThirstySoftW01-Extrabold",
     fontSize: "70px",
+    marginBottom: "50px",
 }
 
 const header = {
@@ -245,7 +248,7 @@ const Alex = {
 
 const TwentyOne = {
     // gold
-    color: "#e69935",
+    color: "#c5893f",
 }
 
 const card = {
