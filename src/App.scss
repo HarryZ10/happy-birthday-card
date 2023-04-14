@@ -1,29 +1,157 @@
 :root {
     --size-divisor: 3;
   
-  }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
-  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-  
-  @media only screen and (min-width: 1024px) {
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+@media only screen and (min-width: 1024px) {
     .container {
-      display:flex;
+        display:flex;
     }
-  }
+}
+
+// Mobile query for 325 to 768px
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+
+    #welcome,
+    #enc,
+    #photo-gallery {
+        text-align: center !important;
+        font-size: 45px !important;
+    }
+
+    #welcome {
+        margin: 0 auto !important;
+        text-align: center !important;
+        margin-bottom: 50px !important;
+        margin-top: 50px !important;
+    }
+
+    #grid-item {
+        padding-left: 0 !important;
+        padding-top: 25px;
+    }
+
+    #card-div-text {
+        width: 100%;
+        height: 370px !important;
+    }
+
+    #card-div {
+        width: 90% !important;
+        margin: 0 auto !important;
+        margin-bottom: 30px !important;
+    }
+
+    #title-card {
+        width: 90% !important;
+    }
+
+    #welcome-div {
+        width: 90% !important;
+    }
+}
+
+.music-player-controller {
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+.react-photo-gallery--gallery {
+    width: 99%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+#title-card {
+    width: 100% !important;
+}
+
+#note-span {
+    color: #c5893f;
+}
+
+#welcome {
+    margin-top: 90px !important;
+    margin-bottom: 100px !important;
+}
+
+#enc,
+#welcome,
+#photo-gallery {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#card,
+#enc,
+#photo-gallery {
+    font-family: 'Delicious Handrawn';
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#enc,
+#photo-gallery {
+    padding-top: 75px;
+}
+
+#photo-gallery {
+    padding-bottom: 100px;
+}
+
+#card-text {
+    font-family: 'Delicious Handrawn';
+    font-weight: 100;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#card-div {
+    margin: 0 auto;
+    width: 90%;
+}
+
+#welcome-div {
+    margin: 0 auto;
+    width: 30%;
+    margin-bottom: 10rem;
+}
+
+#notes-div {
+    margin: 0 auto;
+    width: 70%;
+}
+
+#word-cloud {
+    margin: 0 !important;
+}
+
+#card-div {
+    button {
+        div {
+            svg {
+                width: 100% !important;
+            }
+        }
+    }
+}
+
+#card-div-text {
+    width: 100%;
+    height: 250px;
+    background-color: #fedbb9;
+}
   
-  .weather {
-    font-family: 'Comfortaa';
-  }
-  
-  .container:hover, .container1:hover {
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-    transform: scale(1.05, 1.05);
-  }
-  
-  // container that applies to all containers on screen
-  .container {
+// container that applies to all containers on screen
+.container {
     background: #34415a;
     flex-direction: column;
     justify-content: space-between;
@@ -38,173 +166,45 @@
     box-shadow: 0 0px 10px #111;
     user-select: none;
     transition: all 0.5s;
-  }
-
-  .confetti-wrap {
-    padding: 20px;
-  }
+}
   
-  .confetti-wrap h3 {
-    margin: 0;
-    color: #fff;
-    letter-spacing: 1.5px;
-  }
-  
-  .App {
-    // background: #FFF1E3;
-    // overflow: hidden;
-    height: 100vh;
-    // background: url('https://i.imgur.com/kh8nDjj.jpg') no-repeat center / cover;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  // .container {
-  //   flex-wrap: wrap;
-  //   // background: #34415a;
-  //   position: relative;
-  //   display: flex;
-  //   flex-direction: row;
-  //   justify-content: space-between;
-  //   width: 450px;
-  //   min-height: 30px;
-    
-  //   padding: 1rem;
-  //   // border-radius: 5px;
-  //   box-shadow: 0 0px 10px #111;
-  //   // mix-blend-mode: difference;
-  //   user-select: none;
-  // }
-  
-  .rounded {
-    border-radius: 1.5rem;
-  }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  body {
-    font-family: 'Playfair Display';
+body {
+    font-family: 'Quicksand', sans-serif;
     background-color: #FFF1E3;
+    color: #000;
     background-size: 40px 40px;
     background-image:
-      linear-gradient(to right, white 1px, transparent 1px),
-      linear-gradient(to bottom, white 1px, transparent 1px);
-  }
-  
-  li {
-    list-style: none;
-  }
-  
-  .toInvert {
-    height: 30px;
-    filter: invert(100%);
-  }
-  
-  
-  #weather {
-    flex-grow: 1;
-    background: #34415a;
-    height: 250px;
-    margin-top: 25px;
-  }
-  #news {
-    background: #387C6D;
-    height: 250px;
-    margin-top: 25px;
-  }
-  
-  #events {
-    background: #E9896A;
-    max-height: 550px;
-    margin-top: 65px;
-    max-width: 800px;
-    min-width: 700px;
+        linear-gradient(to right, white 1px, transparent 1px),
+        linear-gradient(to bottom, white 1px, transparent 1px);
+}
 
-    // align-self:baseline;
-  }
-  
-  #welcome {
+img {
+    pointer-events: none;
+}
+
+#welcome {
     color: #353535;
-    font-family: 'Abril Fatface', cursive;
-    font-style: bold;
-    font-size: 400;
+    font-family: 'Abril Fatface';
     text-align: center;
-  }
-  
-  #weatherIcon {
-    width: 10rem;
-    height: 10rem;
-  }
-  
-  .stickyNote {
-    // padding-top: 2px;
-    position: relative;
-    // left: 0.1px;
-    // top: 0;
-    height: 400px;
-    width: 400px;
-    margin-top: -25px;
-    margin-left: 25px;
-    padding-bottom: 20px;
-  }
-  
-  .text {
-    position: absolute;
-    z-index: 100;
-    color: #387C6D;
-  }
-  
-  // @media screen and (max-width: 800px) {
-  //   #events {
-  //     margin-top: 65px;
-  //     padding-top: 10px;
-  //     bottom: 0;
-  //     width: 100%;
-  //     position: relative;
-  //   }
-  // }
-  
-  // #school {
-  //   top: 3;
-  //   left: 10;
-  // }
-  
-  // #club {
-  //   top: 10;
-  //   left: 5;
-  // }
+    font-style: normal;
+    font-weight: 400;
+}
+
+//  @font-face {
+//    font-family: "ThirstyScriptExtraBold";
+//    src: local("ThirstyScriptExtraBold"),
+//     url("./fonts/ThirstyScriptExtraBold.otf") format("truetype");
+//    font-weight: bold;
+//    }
+
+
+@font-face {
+    font-family: "ThirstySoftW01-Extrabold";
+    src: url("//db.onlinewebfonts.com/t/c88633b964c8c94d4b9376609176d311.eot");
+    src: 
+        url("//db.onlinewebfonts.com/t/c88633b964c8c94d4b9376609176d311.eot?#iefix") format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/c88633b964c8c94d4b9376609176d311.woff2") format("woff2"),
+        url("//db.onlinewebfonts.com/t/c88633b964c8c94d4b9376609176d311.woff") format("woff"),
+        url("//db.onlinewebfonts.com/t/c88633b964c8c94d4b9376609176d311.ttf") format("truetype"),
+        url("//db.onlinewebfonts.com/t/c88633b964c8c94d4b9376609176d311.svg#ThirstySoftW01-Extrabold") format("svg");
+}

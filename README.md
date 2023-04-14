@@ -4,11 +4,11 @@ Feel free to fork your own and make your friends happy on their special day!
 
 # Customizable Features
 
-1. Image Cards (created through Canva)
-2. Potential Video Slot
-3. Background Music
-4. Title/Subtitle text
+1. Title Card
+2. React Word Cloud feature
+3. Notes
+4. Photo gallery
 
-# Demo
+# Prod Demo
 
-https://birthday-boy-nico.netlify.app/
+https://alexkauv.netlify.app
